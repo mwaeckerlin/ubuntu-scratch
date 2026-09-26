@@ -1,6 +1,6 @@
 {
   "name": "@mwaeckerlin/ubuntu-scratch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "build": "docker compose build",
     "test": "npm run test:docs && npm run test:image && npm run test:config",

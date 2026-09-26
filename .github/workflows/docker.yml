@@ -20,4 +20,10 @@ concurrency: docker-${{ github.ref_name }}
 jobs:
   docker:
     uses: mwaeckerlin/scratch/.github/workflows/docker-image.yml@master
+    # the job `branches` of docker-image.yml asks for actions: write; the
+    # token of this repository defaults to read, and a called workflow never
+    # gets more than its caller grants, so GitHub refuses to start without this
+    permissions:
+      actions: write
+      contents: read
     secrets: inherit
