@@ -1,0 +1,5 @@
+services:
+
+  ubuntu-scratch:
+    image: mwaeckerlin/ubuntu-scratch
+    build: .
