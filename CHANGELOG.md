@@ -1,5 +1,8 @@
 # Changelog
 
+- 2026-09-26 **1.0.2**
+    - The build and publication run with read rights only, like every other image of the family
+
 - 2026-09-26 **1.0.1**
     - The automatic build and publication on Docker Hub starts; before, GitHub refused to start it
 
